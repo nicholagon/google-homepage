@@ -1,0 +1,65 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+main {
+ 
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 180px 0;
+    line-height: 50px;
+}
+
+input {
+    border-radius: 20px;
+    height: 35px;
+    width: 30%;
+}
+
+ul {
+    padding: 0px;
+    margin: 20px;
+    list-style-type: none;
+}
+
+footer {
+    position: absolute;;
+    bottom: 0;
+    width: 100%;
+}
+.google-nav ul {
+    float: right;
+}
+
+.google-nav, li, .google-footer li {
+    display: inline;
+    padding: 5px;
+}
+
+.google-nav img {
+    vertical-align: middle;
+}
+
+#apps-svg {
+    height: 15px;
+}
+#usr-img{
+    border-radius: 50px;
+}
+
+.google-footer ul {
+    bottom:0;
+}
+
+#google-footer-left {
+    float: left;
+}
+
+#google-footer-right {
+    float: right;
+}
+
