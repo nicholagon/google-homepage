@@ -10,14 +10,53 @@ main {
     text-align: center;
     margin: auto;
     width: 100%;
-    padding: 180px 0;
+    padding: 125px 0;
     line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-input {
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type=text] {
     border-radius: 20px;
-    height: 35px;
-    width: 30%;
+    border: 1px solid #aaaaaa;
+    width: 40vmax;
+    height: 20px;
+    padding: 10px 20px 10px 40px;
+    background-image: url('/images/google-magnifying-glass.svg');
+    opacity: 0.3;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+input[type=text]:focus, input[type=text]:hover {
+    box-shadow: 0px 1px 2px 2px #cccccc;
+}
+
+button {
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 25px 5px;
+}
+
+button:hover{
+    border: 1px solid #dddddd;
+    box-shadow: 0px 1px 2px 0px #dddddd;
 }
 
 ul {
@@ -30,14 +69,22 @@ footer {
     position: absolute;;
     bottom: 0;
     width: 100%;
+    background-color: #eeeeee;
+    border-top: 1px solid #dddddd;
+    font-size: 14px;
 }
 .google-nav ul {
     float: right;
 }
 
-.google-nav, li, .google-footer li {
+.google-nav li {
     display: inline;
     padding: 5px;
+}
+
+.google-footer li {
+    display: inline;
+    padding: 10px;
 }
 
 .google-nav img {
@@ -61,5 +108,14 @@ footer {
 
 #google-footer-right {
     float: right;
+
+}
+
+@media (max-width: 800px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
