@@ -130,6 +130,13 @@ footer {
 }
 
 @media (max-width: 400px) {
+    main {
+        padding: 50px 0px;
+    }
+
+    .google-main-content img{
+        width: 50%;
+    }
     button {
         visibility: hidden;
     }
